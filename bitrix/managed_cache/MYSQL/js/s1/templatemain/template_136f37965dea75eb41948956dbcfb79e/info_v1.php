@@ -1,0 +1,1 @@
+<?php $filesInfo = ["/local/templates/templatemain/assets/js/main.js" => "17485196371448","/local/templates/templatemain/assets/js/modalwindow.js" => "17485302471211",]; ?>

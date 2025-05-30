@@ -1,0 +1,225 @@
+/* Стили только для десктопов (экран > 768px) */
+@media (min-width: 768px) {
+  .usage-page-m {
+    display: none;
+  }
+
+  .usage-page {
+    width: 100%;
+    background-color: var(--gray-100);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 0 40px;
+  }
+
+  .usage-page .breadcrumbsarea {
+    display: flex;
+    flex-direction: column;
+    width: 1200px;
+    height: 60px;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 50px 20px 0px;
+    position: relative;
+  }
+
+  .usage-page .breadcrumpsframe {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 5px 5px;
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    flex: 0 0 auto;
+  }
+
+  .usage-page .breadcrumbspath {
+    position: relative;
+    width: fit-content;
+  }
+
+  .usage-page .breadcrumbspath a {
+    font-family: "Golos UI-Regular", Helvetica;
+    font-weight: 400;
+    color: var(--brand-dark);
+    font-size: 13px;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+  }
+
+  .usage-page .sectionname {
+    position: relative;
+    width: 1160px;
+    height: 70px;
+  }
+
+  .usage-page .sectionnametext {
+    position: relatives;
+    width: 100%;
+    margin-top: 40px;
+    font-family: var(--h2-font-family);
+    font-weight: var(--h2-font-weight);
+    color: var(--gray-900);
+    font-size: var(--h2-font-size);
+    letter-spacing: var(--h2-letter-spacing);
+    line-height: var(--h2-line-height);
+    font-style: var(--h2-font-style);
+  }
+
+  .usage-page .newsframe {
+    display: flex;
+    flex-wrap: wrap;
+    width: 1160px;
+    margin-top: 40px;
+    align-items: flex-start;
+    gap: 40px 40px;
+    position: relative;
+    flex: 0 0 auto;
+  }
+
+  .usage-page .mainpagetop {
+    position: relative;
+    width: 1160px;
+    height: 60px;
+  }
+
+  .usage-page .mainpagetoptext {
+    position: absolute;
+    width: 820px;
+    top: 31px;
+    left: 0;
+    font-family: "Golos UI-Bold", Helvetica;
+    font-weight: 700;
+    color: var(--gray-900);
+    font-size: 30px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+
+  .usage-page .mainpagetoplink {
+    position: absolute;
+    width: 105px;
+    height: 17px;
+    top: 42px;
+    left: 1055px;
+    object-fit: cover;
+  }
+}
+
+/* Стили только для мобильных (экран ≤ 768px) */
+@media (max-width: 768px) {
+  .usage-page {
+    display: none;
+  }
+
+  .usage-page-m {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--gray-100);
+    padding: 0 0 40px;
+  }
+
+  .usage-page-m .breadcrumbsarea-m {
+    display: flex;
+    flex-direction: column;
+    width: 360px;
+    height: 47px;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 20px;
+    position: relative;
+  }
+
+  .usage-page-m .breadcrumpsframe-m {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 5px 5px;
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    flex: 0 0 auto;
+    margin-bottom: -7.00px;
+  }
+
+  .usage-page-m .breadcrumbspath-m {
+    position: relative;
+    width: fit-content;
+    width: 320px;
+    height: 100%;
+  }
+
+  .usage-page-m .breadcrumbspath-m a {
+    margin-top: -1.00px;
+    font-family: "Golos UI-Regular", Helvetica;
+    font-weight: 400;
+    color: var(--brand-dark);
+    font-size: 12px;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+  }
+
+  .usage-page-m .sectionname-m {
+    position: relative;
+    top: 20px;
+    width: 320px;
+    height: 41px;
+  }
+
+  .usage-page-m .sectionnametext-m {
+    position: absolute;
+    width: 320px;
+    top: -25px;
+    left: 0;
+    font-family: var(--h2-font-family);
+    font-weight: var(--h2-font-weight);
+    color: var(--gray-900);
+    font-size: 30px;
+    letter-spacing: var(--h2-letter-spacing);
+    line-height: var(--h2-line-height);
+    font-style: var(--h2-font-style);
+  }
+
+  .usage-page-m .newsframe-m {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    position: relative;
+    flex: 0 0 auto;
+  }
+
+  .usage-page-m .mainpagetop-m {
+    position: relative;
+    width: 320px;
+    height: 100px;
+  }
+  
+  .usage-page-m .mainpagetoptext-m {
+    position: absolute;
+    width: 320px;
+    top: 15px;
+    left: 0;
+    font-family: "Golos UI-Bold", Helvetica;
+    font-weight: 700;
+    color: var(--gray-900);
+    font-size: 25px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .usage-page-m .mainpagetoplink-m {
+    position: absolute;
+    width: 320px;
+    height: 17px;
+    top: 60px;
+    left: 0;
+    object-fit: cover;
+  }
+}

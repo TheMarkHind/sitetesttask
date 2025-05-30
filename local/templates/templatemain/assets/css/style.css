@@ -1,0 +1,912 @@
+/*класс для скрытия элементов*/
+.hidden {
+    display: none;
+}
+
+/* Стили только для десктопов (экран > 768px) */
+@media (min-width: 768px) {
+
+    /*скрываем мобильную верстку*/
+    .carcass-page-mobile {
+        display: none;
+    }
+
+    /*скрываем мобильное меню*/
+    .main-menu-mobile {
+        display: none;
+    }
+
+    /*header, footer и родительский класс*/
+    .carcass-page {
+        width: 100%;
+        background-color: var(--gray-100);
+        display: flex;
+        flex-direction: column;
+    }
+
+    .carcass-page .header {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        gap: 1px;
+        flex: 0 0 auto;
+        position: relative;
+        background-color: #ffffff;
+    }
+
+    .carcass-page .top-bar {
+        display: flex;
+        width: 1200px;
+        align-items: center;
+        justify-content: space-around;
+        gap: 337px;
+        padding: 10px 20px;
+        position: relative;
+        flex: 0 0 auto;
+        background-color: #ffffff;
+    }
+
+    .carcass-page .frame {
+        display: inline-flex;
+        align-items: flex-start;
+        gap: 20px;
+        position: relative;
+        flex: 0 0 auto;
+    }
+
+    .carcass-page .div {
+        display: inline-flex;
+        align-items: flex-start;
+        gap: 5px;
+        position: relative;
+        flex: 0 0 auto;
+    }
+
+    .carcass-page .img-wrapper {
+        position: relative;
+        width: 13px;
+        height: 20px;
+    }
+
+    .carcass-page .mail {
+        position: absolute;
+        width: 13px;
+        height: 10px;
+        top: 5px;
+        left: 0;
+        object-fit: cover;
+    }
+
+    .carcass-page .text-wrapper {
+        position: relative;
+        width: fit-content;
+        margin-top: -1.00px;
+        font-family: "Golos UI-Medium", Helvetica;
+        font-weight: 500;
+        color: var(--gray-700);
+        font-size: 13px;
+        letter-spacing: 0;
+        line-height: 19.5px;
+        white-space: nowrap;
+    }
+
+    .carcass-page .phone {
+        position: absolute;
+        width: 13px;
+        height: 13px;
+        top: 4px;
+        left: 0;
+        object-fit: cover;
+    }
+
+    .carcass-page .line {
+        position: relative;
+        width: 100%;
+        height: 1px;
+        background-color: var(--gray-200);
+    }
+
+    .carcass-page .header-2 {
+        width: 100%;
+        max-width: 1440px;
+        margin: 0 auto;
+        height: 90px;
+        position: relative;
+        background-color: #ffffff;
+        padding: 0 20px;
+        box-sizing: border-box;
+    }
+
+    .carcass-page .navbar {
+        display: inline-flex;
+        align-items: center;
+        gap: 20px;
+        position: absolute;
+        top: 48px;
+        left: 240px;
+    }
+
+    .carcass-page .text-wrapper-2 {
+        position: relative;
+        width: fit-content;
+        margin-top: -10.00px;
+        font-family: "Golos UI-Medium", Helvetica;
+        font-weight: 500;
+        color: var(--gray-900);
+        font-size: 17px;
+        letter-spacing: 0;
+        line-height: normal;
+    }
+
+    .carcass-page .logo {
+        top: 20px;
+        left: 20px;
+        position: absolute;
+        width: 154px;
+        height: 50px;
+        background-image: url(./img/logo.png);
+        background-size: cover;
+        background-position: 50% 50%;
+    }
+
+    .carcass-page .footer {
+        width: 100%;
+        height: 100%;
+        background-color: var(--gray-900);
+        margin-top: auto;
+        flex: 0 0 auto;
+        flex-shrink: 0;
+    }
+
+    .carcass-page .frame-2 {
+        width: 100%;
+        height: 100%;
+        max-width: 1440px;
+        margin: 0 auto;
+        padding: 40px 20px;
+        position: relative;
+        min-height: 637px;
+        box-sizing: border-box;
+    }
+
+    .carcass-page .logo-2 {
+        top: 10px;
+        left: 20px;
+        position: absolute;
+        width: 154px;
+        height: 50px;
+        background-image: url(./img/image.png);
+        background-size: cover;
+        background-position: 50% 50%;
+    }
+
+    .carcass-page .text-wrapper-3 {
+        position: absolute;
+        width: 206px;
+        top: 308px;
+        left: 20px;
+        font-family: var(--caption-font-family);
+        font-weight: var(--caption-font-weight);
+        color: var(--white);
+        font-size: var(--caption-font-size);
+        letter-spacing: var(--caption-letter-spacing);
+        line-height: var(--caption-line-height);
+        font-style: var(--caption-font-style);
+    }
+
+    .carcass-page .text-wrapper-4 {
+        position: absolute;
+        width: 260px;
+        top: 418px;
+        left: 20px;
+        font-family: var(--caption-font-family);
+        font-weight: var(--caption-font-weight);
+        color: var(--white);
+        font-size: var(--caption-font-size);
+        letter-spacing: var(--caption-letter-spacing);
+        line-height: var(--caption-line-height);
+        font-style: var(--caption-font-style);
+    }
+
+    .carcass-page .text-wrapper-5 {
+        position: absolute;
+        width: 260px;
+        top: 486px;
+        left: 20px;
+        font-family: var(--caption-font-family);
+        font-weight: var(--caption-font-weight);
+        color: var(--white);
+        font-size: var(--caption-font-size);
+        letter-spacing: var(--caption-letter-spacing);
+        line-height: var(--caption-line-height);
+        font-style: var(--caption-font-style);
+    }
+
+    .carcass-page .element {
+        position: absolute;
+        width: 216px;
+        height: 32px;
+        top: 156px;
+        left: 20px;
+    }
+
+    .carcass-page .link {
+        display: inline-flex;
+        align-items: flex-end;
+        justify-content: flex-end;
+        gap: 5px;
+        position: absolute;
+        top: 191px;
+        left: 20px;
+    }
+
+    .carcass-page .text-wrapper-6 {
+        position: relative;
+        width: fit-content;
+        margin-top: -1.00px;
+        font-family: var(--link-font-family);
+        font-weight: var(--link-font-weight);
+        color: var(--brand-dark);
+        font-size: var(--link-font-size);
+        text-align: right;
+        letter-spacing: var(--link-letter-spacing);
+        line-height: var(--link-line-height);
+        font-style: var(--link-font-style);
+    }
+
+    .carcass-page .phone-red {
+        position: relative;
+        width: 14.08px;
+        height: 14.11px;
+        object-fit: cover;
+    }
+
+    .carcass-page .text-wrapper-7 {
+        position: absolute;
+        top: 267px;
+        left: 20px;
+        font-family: var(--p-14-1-5-font-family);
+        font-weight: var(--p-14-1-5-font-weight);
+        color: var(--gray-500);
+        font-size: var(--p-14-1-5-font-size);
+        letter-spacing: var(--p-14-1-5-letter-spacing);
+        line-height: var(--p-14-1-5-line-height);
+        white-space: nowrap;
+        font-style: var(--p-14-1-5-font-style);
+    }
+
+    .carcass-page .text-wrapper-8 {
+        position: absolute;
+        width: 260px;
+        top: 227px;
+        left: 20px;
+        font-family: var(--h3-font-family);
+        font-weight: var(--h3-font-weight);
+        color: var(--white);
+        font-size: var(--h3-font-size);
+        letter-spacing: var(--h3-letter-spacing);
+        line-height: var(--h3-line-height);
+        font-style: var(--h3-font-style);
+    }
+
+    .carcass-page .p {
+        position: absolute;
+        width: 339px;
+        top: 335px;
+        left: 20px;
+        font-family: var(--p-14-1-5-font-family);
+        font-weight: var(--p-14-1-5-font-weight);
+        color: var(--gray-500);
+        font-size: var(--p-14-1-5-font-size);
+        letter-spacing: var(--p-14-1-5-letter-spacing);
+        line-height: var(--p-14-1-5-line-height);
+        font-style: var(--p-14-1-5-font-style);
+    }
+
+    .carcass-page .text-wrapper-9 {
+        position: absolute;
+        width: 260px;
+        top: 445px;
+        left: 20px;
+        font-family: var(--p-14-1-5-font-family);
+        font-weight: var(--p-14-1-5-font-weight);
+        color: var(--gray-500);
+        font-size: var(--p-14-1-5-font-size);
+        letter-spacing: var(--p-14-1-5-letter-spacing);
+        line-height: var(--p-14-1-5-line-height);
+        font-style: var(--p-14-1-5-font-style);
+    }
+
+    .carcass-page .text-wrapper-10 {
+        position: absolute;
+        width: 260px;
+        top: 513px;
+        left: 20px;
+        font-family: var(--p-14-1-5-font-family);
+        font-weight: var(--p-14-1-5-font-weight);
+        color: var(--gray-500);
+        font-size: var(--p-14-1-5-font-size);
+        letter-spacing: var(--p-14-1-5-letter-spacing);
+        line-height: var(--p-14-1-5-line-height);
+        font-style: var(--p-14-1-5-font-style);
+    }
+
+    .carcass-page .bottom-frame {
+        position: absolute;
+        width: calc(100% - 40px);
+        top: 587px;
+        left: 20px;
+    }
+
+    .carcass-page .frame-3 {
+        display: inline-flex;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 20px;
+        position: relative;
+        top: 17px;
+        left: 0;
+        width: 100%;
+    }
+
+    .carcass-page .text-wrapper-11 {
+        position: relative;
+        width: fit-content;
+        margin-top: -1.00px;
+        font-family: "Golos UI-Regular", Helvetica;
+        font-weight: 400;
+        color: var(--gray-500);
+        font-size: 12px;
+        letter-spacing: 0;
+        line-height: 16.8px;
+        white-space: nowrap;
+    }
+
+    .carcass-page .bottom-menu {
+        position: absolute;
+        width: 206px;
+        height: auto;
+        top: 200px;
+        left: 900px;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 30px;
+    }
+
+    .carcass-page .text-wrapper-12 {
+        position: relative;
+        font-family: var(--p-14-1-5-font-family);
+        font-weight: var(--p-14-1-5-font-weight);
+        color: var(--white);
+        font-size: var(--p-14-1-5-font-size);
+        letter-spacing: var(--p-14-1-5-letter-spacing);
+        line-height: var(--p-14-1-5-line-height);
+        font-style: var(--p-14-1-5-font-style);
+        margin-bottom: 15px;
+    }
+
+    .carcass-page .text-wrapper-13 {
+        position: absolute;
+        width: 206px;
+        top: 149px;
+        left: 900px;
+        font-family: var(--h4-font-family);
+        font-weight: var(--h4-font-weight);
+        color: var(--white);
+        font-size: var(--h4-font-size);
+        letter-spacing: var(--h4-letter-spacing);
+        line-height: var(--h4-line-height);
+        font-style: var(--h4-font-style);
+    }
+
+    .carcass-page .line-2 {
+        position: absolute;
+        width: calc(100% - 40px);
+        height: 1px;
+        top: 120px;
+        left: 20px;
+        background-color: #ffffff0d;
+    }
+
+    .carcass-page .line-3 {
+        position: absolute;
+        width: calc(100% - 40px);
+        height: 1px;
+        top: 586px;
+        left: 20px;
+        background-color: #ffffff0d;
+    }
+}
+
+/* Стили только для мобильных (экран ≤ 768px) */
+@media (max-width: 768px) {
+
+    /*скрываем десктопную верстку*/
+    .carcass-page {
+        display: none;
+    }
+
+    /*header, footer и родительский класс*/
+    .carcass-page-mobile {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        background-color: var(--gray-100);
+        overflow-x: hidden;
+    }
+
+    .carcass-page-mobile .header-mobile {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        height: 60px;
+        padding: 0 20px;
+        box-sizing: border-box;
+    }
+
+    .carcass-page-mobile .phone {
+        cursor: pointer;
+        width: 20px;
+        height: 20px;
+        object-fit: cover;
+        order: 3;
+    }
+
+    .carcass-page-mobile .logoshort {
+        width: 92px;
+        height: 30px;
+        margin: 0 auto;
+        order: 2;
+    }
+
+    .carcass-page-mobile .bars {
+        width: 18px;
+        height: 14px;
+        object-fit: cover;
+        cursor: pointer;
+        order: 1;
+    }
+
+    .carcass-page-mobile .footer {
+        width: 100%;
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        height: 854px;
+        background-color: var(--gray-900);
+        margin: 0 auto;
+        padding: 0 20px;
+        box-sizing: border-box;
+    }
+
+    .carcass-page-mobile .suggestions {
+        display: inline-flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+        position: absolute;
+        top: 770px;
+        left: 20px;
+    }
+
+    .carcass-page-mobile .text-wrapper {
+        position: relative;
+        width: fit-content;
+        margin-top: -1.00px;
+        font-family: "Golos UI-Regular", Helvetica;
+        font-weight: 400;
+        color: var(--gray-500);
+        font-size: 12px;
+        letter-spacing: 0;
+        line-height: 16.8px;
+        white-space: nowrap;
+    }
+
+    .carcass-page-mobile .div {
+        position: relative;
+        width: fit-content;
+        font-family: "Golos UI-Regular", Helvetica;
+        font-weight: 400;
+        color: var(--gray-500);
+        font-size: 12px;
+        letter-spacing: 0;
+        line-height: 16.8px;
+        white-space: nowrap;
+    }
+
+    .carcass-page-mobile .line {
+        top: 727px;
+        left: 17px;
+        position: absolute;
+        width: calc(100% - 40px);
+        height: 1px;
+        background-color: #ffffff0d;
+    }
+
+    .carcass-page-mobile .footer-interactions {
+        display: inline-flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 30px;
+        position: absolute;
+        top: 111px;
+        left: 20px;
+    }
+
+    .carcass-page-mobile .main-info {
+        position: relative;
+        width: 319px;
+        height: 372px;
+    }
+
+    .carcass-page-mobile .p {
+        position: absolute;
+        width: 260px;
+        top: 350px;
+        left: 0;
+        font-family: var(--p-14-1-5-font-family);
+        font-weight: var(--p-14-1-5-font-weight);
+        color: var(--gray-500);
+        font-size: var(--p-14-1-5-font-size);
+        letter-spacing: var(--p-14-1-5-letter-spacing);
+        line-height: var(--p-14-1-5-line-height);
+        font-style: var(--p-14-1-5-font-style);
+    }
+
+    .carcass-page-mobile .text-wrapper-2 {
+        position: absolute;
+        width: 260px;
+        top: 323px;
+        left: 0;
+        font-family: var(--caption-font-family);
+        font-weight: var(--caption-font-weight);
+        color: var(--white);
+        font-size: var(--caption-font-size);
+        letter-spacing: var(--caption-letter-spacing);
+        line-height: var(--caption-line-height);
+        font-style: var(--caption-font-style);
+    }
+
+    .carcass-page-mobile .text-wrapper-3 {
+        position: absolute;
+        width: 260px;
+        top: 282px;
+        left: 0;
+        font-family: var(--p-14-1-5-font-family);
+        font-weight: var(--p-14-1-5-font-weight);
+        color: var(--gray-500);
+        font-size: var(--p-14-1-5-font-size);
+        letter-spacing: var(--p-14-1-5-letter-spacing);
+        line-height: var(--p-14-1-5-line-height);
+        font-style: var(--p-14-1-5-font-style);
+    }
+
+    .carcass-page-mobile .text-wrapper-4 {
+        position: absolute;
+        width: 260px;
+        top: 255px;
+        left: 0;
+        font-family: var(--caption-font-family);
+        font-weight: var(--caption-font-weight);
+        color: var(--white);
+        font-size: var(--caption-font-size);
+        letter-spacing: var(--caption-letter-spacing);
+        line-height: var(--caption-line-height);
+        font-style: var(--caption-font-style);
+    }
+
+    .carcass-page-mobile .text-wrapper-5 {
+        position: absolute;
+        width: 319px;
+        top: 172px;
+        left: 0;
+        font-family: var(--p-14-1-5-font-family);
+        font-weight: var(--p-14-1-5-font-weight);
+        color: var(--gray-500);
+        font-size: var(--p-14-1-5-font-size);
+        letter-spacing: var(--p-14-1-5-letter-spacing);
+        line-height: var(--p-14-1-5-line-height);
+        font-style: var(--p-14-1-5-font-style);
+    }
+
+    .carcass-page-mobile .text-wrapper-6 {
+        cursor: pointer;
+        position: absolute;
+        width: 206px;
+        top: 145px;
+        left: 0;
+        font-family: var(--caption-font-family);
+        font-weight: var(--caption-font-weight);
+        color: var(--white);
+        font-size: var(--caption-font-size);
+        letter-spacing: var(--caption-letter-spacing);
+        line-height: var(--caption-line-height);
+        font-style: var(--caption-font-style);
+    }
+
+    .carcass-page-mobile .text-wrapper-7 {
+        position: absolute;
+        top: 104px;
+        left: 0;
+        font-family: var(--p-14-1-5-font-family);
+        font-weight: var(--p-14-1-5-font-weight);
+        color: var(--gray-500);
+        font-size: var(--p-14-1-5-font-size);
+        letter-spacing: var(--p-14-1-5-letter-spacing);
+        line-height: var(--p-14-1-5-line-height);
+        white-space: nowrap;
+        font-style: var(--p-14-1-5-font-style);
+    }
+
+    .carcass-page-mobile .text-wrapper-8 {
+        position: absolute;
+        width: 260px;
+        top: 70px;
+        left: 0;
+        font-family: var(--h3-font-family);
+        font-weight: var(--h3-font-weight);
+        color: var(--white);
+        font-size: var(--h3-font-size);
+        letter-spacing: var(--h3-letter-spacing);
+        line-height: var(--h3-line-height);
+        font-style: var(--h3-font-style);
+    }
+
+    .carcass-page-mobile .link {
+        cursor: pointer;
+        display: inline-flex;
+        align-items: flex-end;
+        justify-content: flex-end;
+        gap: 5px;
+        position: absolute;
+        top: 34px;
+        left: 0;
+    }
+
+    .carcass-page-mobile .text-wrapper-9 {
+        position: relative;
+        width: fit-content;
+        margin-top: -1.00px;
+        font-family: var(--link-font-family);
+        font-weight: var(--link-font-weight);
+        color: var(--brand-dark);
+        font-size: var(--link-font-size);
+        text-align: right;
+        letter-spacing: var(--link-letter-spacing);
+        line-height: var(--link-line-height);
+        font-style: var(--link-font-style);
+    }
+
+    .carcass-page-mobile .phone-red {
+        position: relative;
+        width: 14.08px;
+        height: 14.11px;
+        object-fit: cover;
+    }
+
+    .carcass-page-mobile .text-wrapper-10 {
+        position: absolute;
+        width: 260px;
+        top: -1px;
+        left: 0;
+        font-family: var(--h3-font-family);
+        font-weight: var(--h3-font-weight);
+        color: var(--white);
+        font-size: var(--h3-font-size);
+        letter-spacing: var(--h3-letter-spacing);
+        line-height: var(--h3-line-height);
+        font-style: var(--h3-font-style);
+    }
+
+    .carcass-page-mobile .footer-menu {
+        position: relative;
+        width: 206px;
+        height: 173px;
+    }
+
+    .carcass-page-mobile .menu-frame {
+        display: inline-flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+        position: absolute;
+        top: 44px;
+        left: 0;
+    }
+
+    .carcass-page-mobile .text-wrapper-11 {
+        position: relative;
+        width: 206px;
+        margin-top: -1.00px;
+        font-family: var(--p-14-1-5-font-family);
+        font-weight: var(--p-14-1-5-font-weight);
+        color: var(--white);
+        font-size: var(--p-14-1-5-font-size);
+        letter-spacing: var(--p-14-1-5-letter-spacing);
+        line-height: var(--p-14-1-5-line-height);
+        font-style: var(--p-14-1-5-font-style);
+    }
+
+    .carcass-page-mobile .text-wrapper-12 {
+        position: relative;
+        width: 206px;
+        font-family: var(--p-14-1-5-font-family);
+        font-weight: var(--p-14-1-5-font-weight);
+        color: var(--white);
+        font-size: var(--p-14-1-5-font-size);
+        letter-spacing: var(--p-14-1-5-letter-spacing);
+        line-height: var(--p-14-1-5-line-height);
+        font-style: var(--p-14-1-5-font-style);
+    }
+
+    .carcass-page-mobile .text-wrapper-13 {
+        position: absolute;
+        width: 206px;
+        top: -1px;
+        left: 0;
+        font-family: var(--h4-font-family);
+        font-weight: var(--h4-font-weight);
+        color: var(--white);
+        font-size: var(--h4-font-size);
+        letter-spacing: var(--h4-letter-spacing);
+        line-height: var(--h4-line-height);
+        font-style: var(--h4-font-style);
+    }
+
+    .carcass-page-mobile .line-2 {
+        top: 80px;
+        left: 20px;
+        position: absolute;
+        width: calc(100% - 40px);
+        height: 1px;
+        background-color: #ffffff0d;
+    }
+
+    .carcass-page-mobile .logo-area {
+        position: absolute;
+        width: 92px;
+        height: 30px;
+        top: 25px;
+        left: 20px;
+    }
+
+    /*menu*/
+    .main-menu-mobile {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        min-height: 634px;
+        position: relative;
+        background-color: var(--gray-100);
+    }
+
+    .main-menu-mobile .menu-frame {
+        width: 100%;
+        min-height: 634px;
+        background-color: #ffffff;
+        position: relative;
+    }
+
+    .main-menu-mobile .down-frame {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 210px;
+        left: 0;
+        background-color: var(--gray-200);
+    }
+
+    .main-menu-mobile .text-wrapper {
+        position: absolute;
+        top: 90px;
+        left: 40px;
+        font-family: var(--p-14-1-5-font-family);
+        font-weight: var(--p-14-1-5-font-weight);
+        color: var(--gray-700);
+        font-size: var(--p-14-1-5-font-size);
+        letter-spacing: var(--p-14-1-5-letter-spacing);
+        line-height: var(--p-14-1-5-line-height);
+        white-space: nowrap;
+        font-style: var(--p-14-1-5-font-style);
+    }
+
+    .main-menu-mobile .div {
+        position: absolute;
+        width: 260px;
+        top: 55px;
+        left: 40px;
+        font-family: var(--h3-font-family);
+        font-weight: var(--h3-font-weight);
+        color: var(--brand-dark);
+        font-size: var(--h3-font-size);
+        letter-spacing: var(--h3-letter-spacing);
+        line-height: var(--h3-line-height);
+        font-style: var(--h3-font-style);
+    }
+
+    .main-menu-mobile .p {
+        position: absolute;
+        width: 260px;
+        top: 20px;
+        left: 40px;
+        font-family: var(--h3-font-family);
+        font-weight: var(--h3-font-weight);
+        color: var(--brand-dark);
+        font-size: var(--h3-font-size);
+        letter-spacing: var(--h3-letter-spacing);
+        line-height: var(--h3-line-height);
+        font-style: var(--h3-font-style);
+    }
+
+    .main-menu-mobile .menu-list {
+        display: flex;
+        flex-direction: column;
+        height: 134px;
+        align-items: flex-start;
+        gap: 15px;
+        position: absolute;
+        top: 76px;
+        left: 20px;
+        right: 20px;
+    }
+
+    .main-menu-mobile .text-wrapper-3 {
+        position: relative;
+        width: 100%;
+        left: 20px;
+        font-family: "Golos UI-Bold", Helvetica;
+        font-weight: 700;
+        color: var(--gray-900);
+        font-size: 16px;
+        letter-spacing: 0;
+        line-height: normal;
+    }
+
+    .main-menu-mobile .line {
+        position: absolute;
+        width: 100%;
+        height: 1px;
+        top: 59px;
+        left: 0;
+        background-color: var(--gray-200);
+    }
+
+    .main-menu-mobile .overlap-group {
+        position: absolute;
+        height: 24px;
+        top: 20px;
+        left: 40px;
+        right: 20px;
+    }
+
+    .main-menu-mobile .menu-text {
+        position: absolute;
+        width: 100%;
+        top: 0;
+        left: 0;
+        font-family: var(--h3-font-family);
+        font-weight: var(--h3-font-weight);
+        color: var(--gray-900);
+        font-size: var(--h3-font-size);
+        letter-spacing: var(--h3-letter-spacing);
+        line-height: var(--h3-line-height);
+        font-style: var(--h3-font-style);
+    }
+
+    .main-menu-mobile .back-button {
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        top: 3px;
+        right: 20px;
+        object-fit: cover;
+        cursor: pointer;
+    }
+}
